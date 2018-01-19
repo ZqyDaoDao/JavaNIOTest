@@ -1,7 +1,9 @@
 package com.NIO.Test;
 
 import java.nio.CharBuffer;
-
+/*
+* buffer 填充和释放
+* */
 public class PutandRealeaseTest {
     public static void main (String [] argv) throws Exception {
         CharBuffer buffer = CharBuffer.allocate (100);

@@ -16,7 +16,8 @@ public class SelectSockets {
         if (argv.length > 0) {
             // Override default listen port
              port = Integer.parseInt(argv[0]);
-        }System.out.println("Listening on port " + port);
+        }
+        System.out.println("Listening on port " + port);
         // Allocate an unbound server socket channel
          ServerSocketChannel serverChannel = ServerSocketChannel.open();
          // Get the associated ServerSocket to bind it with
@@ -104,7 +105,8 @@ public class SelectSockets {
             // you'd do something more useful than this.
             buffer.clear();
             // Empty buffer
-        }if (count < 0) {
+        }
+        if (count < 0) {
             // Close channel on EOF, invalidates the key
             socketChannel.close();
         }
